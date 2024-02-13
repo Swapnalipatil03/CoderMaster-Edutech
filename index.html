@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>..::| SKN IEEE Student Branch |::..</title>
+  <link rel="icon" type="image" href="public/images/logo.ico">
+  <!-- Link to General Sans font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;700&display=swap">
+  <!-- Link to Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Apply font-family to body -->
+  <style>
+    body {
+      font-family: 'General Sans', sans-serif;
+    }
+
+    
+    
+
+    /* Update color palette */
+    .bg-sage-green {
+      background-color: #9dc183; /* Sage Green */
+    }
+
+    .text-yellow {
+      color: #f3e9d2; /* Yellow */
+    }
+
+    .text-grey {
+      color: #808080; /* Grey */
+    }
+  
+  </style>
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script> -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script> -->
+  <!-- <script src="/public/script/firebase.js"></script> -->
+  <script src="/sknisb-website-demo-main/countdown.js"></script>
+</head>
+
+<body class="bg-gray-300">
+
+  <div id="scrollToTop" class="fixed top-6 right-6 cursor-pointer z-50 bg-black rounded-full p-2 hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M10 17a1 1 0 01-1-1V4.414l-3.293 3.293a1 1 0 11-1.414-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L11 4.414V16a1 1 0 01-1 1z"
+        clip-rule="evenodd" />
+    </svg>
+  </div>
+
+  <header class="relative">
+    <nav class="container mx-auto flex justify-between items-center absolute z-10 top-0 left-0 right-0 py-4">
+      <div class="mx-auto md:mx-0 text-white font-bold text-xl text-center sm:text-left">
+        &nbsp;CodeMaster
+      </div>
+      <ul class="flex space-x-5 hidden md:flex">
+
+        <li>
+          <a href="#about" class="text-white hover:underline">About Us</a>
+        </li>
+        <li>
+          <a href="#domains" class="text-white hover:underline">Courses</a>
+        </li>
+        
+        <li>
+          <a href="#contact" class="text-white hover:underline">Contact Us</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-white hover:underline"> </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero"
+    class="relative overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16 h-screen px-10">
+    <!-- Background Video -->
+    <video autoplay loop muted class="absolute inset-0 object-cover w-full h-full">
+      <source src="public/images/source_code.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container relative z-10 m-auto grid h-full place-items-center text-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Welcome to CodeMaster Academy
+        </h1>
+        <p class="text-lg md:text-2xl mb-8">
+          Know the Code till the Core....
+        </p>
+        <div class="xl:space-x-12">
+          <button href="#contact"
+            class="join-us bg-white text-blue-500 hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+            Join Us
+          </button>
+          <button href="#about"
+            class="learn-more gap-12 text-white-500 hover:border-solid border-2 border-white-600 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- About Us Section -->
+  <div class="container mx-auto p-2 bg-gray-100">
+    <h2 class=" text-4xl font-bold mb-6">About Us</h2>
+  </div>
+  <section id="about" class="py-10 bg-gray-100 px-10 md:px-10">
+    <div class="container mx-auto">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <!-- Team Photo (Full Width) -->
+        <div class="md:col-span-2 mb-18">
+          <img src="public/images/gp1.avif" alt="IEEE Student Branch Team"
+            class="w-full rounded-lg shadow-md" />
+        </div>
+
+        <!-- Information and Milestones (Two Columns) -->
+        <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+          <!-- Column 1: Club Info and Members -->
+          <div class="col-span-1">
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+              Class Info
+            </h3>
+            <p class="text-lg text-gray-700 mb-4">
+              At CodeMaster Academy, we are passionate about empowering individuals with the skills they need to thrive
+              in the rapidly evolving world of technology. Established in 2010, our institute has been a leader in
+              providing high-quality programming education to students of all ages and backgrounds.
+            </p>
+            <p class="text-lg text-gray-700">
+              Our mission at CodeMaster Academy is to inspire and educate the next generation of software developers,
+              engineers, and innovators. We believe that everyone has the potential to learn and succeed in the field of
+              programming, regardless of their prior experience or background.
+              With a team of experienced instructors, we offer dynamic programming courses tailored to beginners and
+              advanced learners alike. Our hands-on approach and industry-relevant curriculum ensure that students gain
+              practical skills and confidence in their coding journey. Join us and unlock your potential in the world of
+              programming. Let's code the future together.
+            </p>
+            <br>
+            <br>
+
+            <div
+              class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 xl:space-x-12">
+              <a href="#contact"
+                class="bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                Become a Member
+              </a>
+              <a href="#domains"
+                class="bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                Explore Domains
+              </a>
+            </div>
+
+          </div>
+
+
+          <!-- Column 2: Milestones -->
+          <div class="col-span-1">
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+              Milestones
+            </h3>
+            <!-- Stacked Milestone Cards -->
+            <div class="space-y-4">
+              <!-- Milestone 1 -->
+              <div class="bg-white rounded-lg p-4 shadow-md">
+                <p class="text-gray-700">Formation in 2010</p>
+              </div>
+
+              <!-- Milestone 2 -->
+              <div class="bg-white rounded-lg p-4 shadow-md">
+                <p class="text-gray-700">Grown from a small startup to a thriving academy with 10 branches Maharashtra
+                </p>
+              </div>
+
+              <!-- Milestone 3 -->
+              <div class="bg-white rounded-lg p-4 shadow-md">
+                <p class="text-gray-700">Produced 100+ successful graduates who have secured jobs in leading tech
+                  companies.</p>
+              </div>
+
+              <!-- Milestone 4 -->
+              <div class="bg-white rounded-lg p-4 shadow-md">
+                <p class="text-gray-700">
+                  Developed a cutting-edge curriculum that integrates the latest industry trends and technologies.
+                </p>
+              </div>
+
+              <!-- Milestone 5 -->
+              <div class="bg-white rounded-lg p-4 shadow-md">
+                <p class="text-gray-700"> Established partnerships with industry leaders to provide internship
+                  opportunities and mentorship programs for our students.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+        <br>
+
+
+
+      </div>
+  </section>
+
+
+
+  <!-- Domain Section -->
+  <div class="container mx-auto p-8 bg-white " id="domains">
+    <h2 class=" text-4xl font-bold mb-6">Courses</h2>
+
+
+
+
+
+
+    <h3 class="text-xl font-semibold text-gray-700 ">
+      Online courses
+    </h3>
+    <!-- Stacked Milestone Cards -->
+    <div class="space-y-4">
+      <!-- Domain 1 -->
+      <div class="container mx-auto ">
+
+
+
+
+
+        <div
+          class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12  sm:text-left">
+          <div class="relative">
+            <div class="absolute -inset-1">
+              <div
+                class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+              </div>
+            </div>
+            <div class="relative  domaincard overflow-hidden  bg-black shadow-md rounded-xl h-full">
+              <div class="p-9"> <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+                <rect width="900" height="900" fill="none" />
+                <path fill="#00599c" d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0" />
+                <path fill="#004482" d="m68.36 126.586l46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0" />
+                <path fill="#659ad2" d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0" />
+                <path fill="#fff" d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465c-10.433 0-18.922-8.488-18.922-18.922c0-10.434 8.49-18.922 18.922-18.922c6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57z" />
+              </svg>
+                  <path opacity="0.4" d="M8 10L6 12L8 14" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path opacity="0.4" d="M16 10L18 12L16 14" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path opacity="0.4" d="M13 9.66992L11 14.33" stroke="#292D32" stroke-width="1.5"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">C++</h3>
+                <p class="mt-6 text-base text-white">
+                  35 Topics 175 Lectures 44 Assignments 20 MCQ Quiz<br>
+                  Pre-reqisite: No Pre-requisite
+                  Validity: 5 Months<br>
+                  Fees: 5900/-
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-hidden bg-black shadow-md rounded-xl">
+            <div class="p-9"><svg  class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+              <rect width="900" height="900" fill="none" />
+              <linearGradient id="deviconPython0" x1="70.252" x2="170.659" y1="1237.476" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#5a9fd4" />
+                <stop offset="1" stop-color="#306998" />
+              </linearGradient>
+              <linearGradient id="deviconPython1" x1="209.474" x2="173.62" y1="1098.811" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ffd43b" />
+                <stop offset="1" stop-color="#ffe873" />
+              </linearGradient>
+              <path fill="url(#deviconPython0)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007c-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521c-2.268 9.405-2.368 15.275 0 25.096c1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837c-4.244-.706-8.645-1.027-12.866-1.008M50.037 9.557c2.55 0 4.634 2.117 4.634 4.721c0 2.593-2.083 4.69-4.634 4.69c-2.56 0-4.633-2.097-4.633-4.69c-.001-2.604 2.073-4.721 4.633-4.721" transform="translate(0 10.26)" />
+              <path fill="url(#deviconPython1)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547c7.816 2.297 15.312 2.713 24.665 0c6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519c2.578-7.735 2.467-15.174 0-25.096c-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692c0 2.602-2.074 4.719-4.634 4.719c-2.55 0-4.633-2.117-4.633-4.719c0-2.595 2.083-4.692 4.633-4.692" transform="translate(0 10.26)" />
+              <radialGradient id="deviconPython2" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#b8b8b8" stop-opacity="0.498" />
+                <stop offset="1" stop-color="#7f7f7f" stop-opacity="0" />
+              </radialGradient>
+              <path fill="url(#deviconPython2)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416c-18.276 0-33.092-2.873-33.092-6.416c0-3.544 14.815-6.417 33.092-6.417c18.275 0 33.091 2.872 33.091 6.417" opacity="0.444" />
+            </svg>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+              </svg>
+
+              <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">Python</h3>
+              <p class="mt-6 text-base text-white">19 Topics 11 Lectures 40 MCQ Quiz <br>
+                Pre-requisite: No Pre-requisite <br>
+                Validity: 3 Months<br>
+                Fees: 4000/-
+              </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -inset-1">
+              <div
+                class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+              </div>
+            </div>
+            <div class="relative overflow-hidden bg-black shadow-md rounded-xl h-full">
+              <div class="p-9"><svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+                <rect width="128" height="128" fill="none" />
+                <path fill="#0074bd" d="M52.581 67.817s-3.284 1.911 2.341 2.557c6.814.778 10.297.666 17.805-.753c0 0 1.979 1.237 4.735 2.309c-16.836 7.213-38.104-.418-24.881-4.113m-2.059-9.415s-3.684 2.729 1.945 3.311c7.28.751 13.027.813 22.979-1.103c0 0 1.373 1.396 3.536 2.157c-20.352 5.954-43.021.469-28.46-4.365" />
+                <path fill="#ea2d2e" d="M67.865 42.431c4.151 4.778-1.088 9.074-1.088 9.074s10.533-5.437 5.696-12.248c-4.519-6.349-7.982-9.502 10.771-20.378c.001 0-29.438 7.35-15.379 23.552" />
+                <path fill="#0074bd" d="M90.132 74.781s2.432 2.005-2.678 3.555c-9.716 2.943-40.444 3.831-48.979.117c-3.066-1.335 2.687-3.187 4.496-3.576c1.887-.409 2.965-.334 2.965-.334c-3.412-2.403-22.055 4.719-9.469 6.762c34.324 5.563 62.567-2.506 53.665-6.524m-35.97-26.134s-15.629 3.713-5.534 5.063c4.264.57 12.758.439 20.676-.225c6.469-.543 12.961-1.704 12.961-1.704s-2.279.978-3.93 2.104c-15.874 4.175-46.533 2.23-37.706-2.038c7.463-3.611 13.533-3.2 13.533-3.2M82.2 64.317c16.135-8.382 8.674-16.438 3.467-15.353c-1.273.266-1.845.496-1.845.496s.475-.744 1.378-1.063c10.302-3.62 18.223 10.681-3.322 16.345c0 0 .247-.224.322-.425" />
+                <path fill="#ea2d2e" d="M72.474 1.313s8.935 8.939-8.476 22.682c-13.962 11.027-3.184 17.313-.006 24.498c-8.15-7.354-14.128-13.828-10.118-19.852c5.889-8.842 22.204-13.131 18.6-27.328" />
+                <path fill="#0074bd" d="M55.749 87.039c15.484.99 39.269-.551 39.832-7.878c0 0-1.082 2.777-12.799 4.981c-13.218 2.488-29.523 2.199-39.191.603c0 0 1.98 1.64 12.158 2.294" />
+                <path fill="#ea2d2e" d="M94.866 100.181h-.472v-.264h1.27v.264h-.47v1.317h-.329zm2.535.066h-.006l-.468 1.251h-.216l-.465-1.251h-.005v1.251h-.312v-1.581h.457l.431 1.119l.432-1.119h.454v1.581h-.302zm-44.19 14.79c-1.46 1.266-3.004 1.978-4.391 1.978c-1.974 0-3.045-1.186-3.045-3.085c0-2.055 1.146-3.56 5.738-3.56h1.697zm4.031 4.548v-14.077c0-3.599-2.053-5.973-6.997-5.973c-2.886 0-5.416.714-7.473 1.622l.592 2.493c1.62-.595 3.715-1.147 5.771-1.147c2.85 0 4.075 1.147 4.075 3.521v1.779h-1.424c-6.921 0-10.044 2.685-10.044 6.723c0 3.479 2.058 5.456 5.933 5.456c2.49 0 4.351-1.028 6.088-2.533l.316 2.137h3.163zm13.452 0h-5.027l-6.051-19.689h4.391l3.756 12.099l.835 3.635c1.896-5.258 3.24-10.596 3.912-15.733h4.271c-1.143 6.481-3.203 13.598-6.087 19.688m19.288-4.548c-1.465 1.266-3.01 1.978-4.392 1.978c-1.976 0-3.046-1.186-3.046-3.085c0-2.055 1.149-3.56 5.736-3.56h1.701v4.667zm4.033 4.548v-14.077c0-3.599-2.059-5.973-6.999-5.973c-2.889 0-5.418.714-7.475 1.622l.593 2.493c1.62-.595 3.718-1.147 5.774-1.147c2.846 0 4.074 1.147 4.074 3.521v1.779h-1.424c-6.923 0-10.045 2.685-10.045 6.723c0 3.479 2.056 5.456 5.93 5.456c2.491 0 4.349-1.028 6.091-2.533l.318 2.137h3.163zm-56.693 3.346c-1.147 1.679-3.005 3.008-5.037 3.757l-1.989-2.345c1.547-.794 2.872-2.075 3.489-3.269c.532-1.063.753-2.43.753-5.701V92.891h4.284v22.173c0 4.375-.348 6.144-1.5 7.867" />
+              </svg>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+
+                <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">Java</h3>
+                <p class="mt-6 text-base text-white">54 Topics 22 Lectures 6 Assignments 121 MCQ Quiz<br>
+                  Pre-reqisite: No Pre-requisite
+                  Validity: 4 Months<br>
+                  Fees: 1000/-
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-hidden bg-black shadow-md rounded-xl">
+            <div class="p-9"><svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+              <rect width="128" height="128" fill="none" />
+              <path fill="#00adef" d="m126 1.637l-67 9.834v49.831l67-.534zM1.647 66.709l.003 42.404l50.791 6.983l-.04-49.057zm56.82.68l.094 49.465l67.376 9.509l.016-58.863zM1.61 19.297l.047 42.383l50.791-.289l-.023-49.016z" />
+            </svg>
+              <path fill="#00adef" d="m126 1.637l-67 9.834v49.831l67-.534zM1.647 66.709l.003 42.404l50.791 6.983l-.04-49.057zm56.82.68l.094 49.465l67.376 9.509l.016-58.863zM1.61 19.297l.047 42.383l50.791-.289l-.023-49.016z" />
+            </svg>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+
+              <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">Operating System</h3>
+              <p class="mt-6 text-base text-white">10 Topics 21 Lectures 6 Assignments 121 MCQ Quiz<br>
+                Pre-reqisite: No Pre-requisite
+                Validity: 2 Months<br>
+                Fees: 2000/-
+                </p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -inset-1">
+              <div
+                class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+              </div>
+            </div>
+            <div class="relative overflow-hidden bg-black shadow-md rounded-xl h-full">
+              <div class="p-9"><svg class=" w-12 h-12 "xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+                <rect width="128" height="128" fill="none" />
+                <path fill="#3fb6d3" d="M12.3 64.2L76.3 0h39.4L32.1 83.6zm64 63.8h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z" />
+                <path fill="#27aacd" d="m81.6 93.9l-20-20l-19.4 19.6l19.4 19.6z" />
+                <path fill="#19599a" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z" />
+                <linearGradient id="deviconFlutter0" x1="59.365" x2="86.825" y1="116.36" y2="99.399" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#1b4e94" />
+                  <stop offset=".63" stop-color="#1a5497" />
+                  <stop offset="1" stop-color="#195a9b" />
+                </linearGradient>
+                <path fill="url(#deviconFlutter0)" d="m61.6 113.1l30.8-8.4l-10.8-10.8z" />
+              </svg>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                </svg>
+
+                <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">Flutter Development</h3>
+                <p class="mt-6 text-base text-white">17 Topics 76 Lectures 33 Assignments 327 MCQ Quiz<br>
+                  Pre-reqisite: No Pre-requisite
+                  Validity: 5 Months<br>
+                  Fees: 1000/-
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="overflow-hidden bg-black shadow-md rounded-xl h-full">
+            <div class="p-9"><svg class=" w-12 h-12 " xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128">
+              <rect width="128" height="128" fill="none" />
+              <g fill="#61dafb">
+                <circle cx="64" cy="64" r="11.4" />
+                <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3c.6-2.4 1.1-4.8 1.5-7.1c2.1-13.2-.2-22.5-6.6-26.1c-1.9-1.1-4-1.6-6.4-1.6c-7 0-15.9 5.2-24.9 13.9c-9-8.7-17.9-13.9-24.9-13.9c-2.4 0-4.5.5-6.4 1.6c-6.4 3.7-8.7 13-6.6 26.1c.4 2.3.9 4.7 1.5 7.1c-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3c-.6 2.4-1.1 4.8-1.5 7.1c-2.1 13.2.2 22.5 6.6 26.1c1.9 1.1 4 1.6 6.4 1.6c7.1 0 16-5.2 24.9-13.9c9 8.7 17.9 13.9 24.9 13.9c2.4 0 4.5-.5 6.4-1.6c6.4-3.7 8.7-13 6.6-26.1c-.4-2.3-.9-4.7-1.5-7.1c2.4-.7 4.7-1.4 6.9-2.3c12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8M92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3c-.3 2.1-.8 4.3-1.4 6.6c-5.2-1.2-10.7-2-16.5-2.5c-3.4-4.8-6.9-9.1-10.4-13c7.4-7.3 14.9-12.3 21-12.3c1.3 0 2.5.3 3.5.9M81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6c-3.7.3-7.4.4-11.2.4c-3.9 0-7.6-.1-11.2-.4c-2.2-3.2-4.2-6.4-6-9.6c-1.9-3.3-3.7-6.7-5.3-10c1.6-3.3 3.4-6.7 5.3-10c1.8-3.2 3.9-6.4 6.1-9.6c3.7-.3 7.4-.4 11.2-.4c3.9 0 7.6.1 11.2.4c2.2 3.2 4.2 6.4 6 9.6c1.9 3.3 3.7 6.7 5.3 10c-1.7 3.3-3.4 6.6-5.3 10m8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3c-3.4.8-7 1.4-10.8 1.9c1.2-1.9 2.5-3.9 3.6-6c1.2-2.1 2.3-4.2 3.4-6.2M64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3c2.3.1 4.6.2 6.9.2c2.3 0 4.6-.1 6.9-.2c-2.2 2.9-4.5 5.7-6.9 8.3m-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9c1.1-3.3 2.3-6.8 3.8-10.3c1.1 2 2.2 4.1 3.4 6.1c1.2 2.2 2.4 4.1 3.6 6.1m-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3c3.4-.8 7-1.4 10.8-1.9c-1.2 1.9-2.5 3.9-3.6 6c-1.2 2.1-2.3 4.2-3.4 6.2M64 30.2c2.4 2.6 4.7 5.4 6.9 8.3c-2.3-.1-4.6-.2-6.9-.2c-2.3 0-4.6.1-6.9.2c2.2-2.9 4.5-5.7 6.9-8.3m22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9c-1.1 3.3-2.3 6.8-3.8 10.3c-1.1-2.1-2.2-4.2-3.4-6.2M31.7 35c-1.7-10.5-.3-17.9 3.8-20.3c1-.6 2.2-.9 3.5-.9c6 0 13.5 4.9 21 12.3c-3.5 3.8-7 8.2-10.4 13c-5.8.5-11.3 1.4-16.5 2.5c-.6-2.3-1-4.5-1.4-6.6M7 64c0-4.7 5.7-9.7 15.7-13.4c2-.8 4.2-1.5 6.4-2.1c1.6 5 3.6 10.3 6 15.6c-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64m28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3c.3-2.1.8-4.3 1.4-6.6c5.2 1.2 10.7 2 16.5 2.5c3.4 4.8 6.9 9.1 10.4 13c-7.4 7.3-14.9 12.3-21 12.3c-1.3 0-2.5-.3-3.5-.9M96.3 93c1.7 10.5.3 17.9-3.8 20.3c-1 .6-2.2.9-3.5.9c-6 0-13.5-4.9-21-12.3c3.5-3.8 7-8.2 10.4-13c5.8-.5 11.3-1.4 16.5-2.5c.6 2.3 1 4.5 1.4 6.6m9-15.6c-2 .8-4.2 1.5-6.4 2.1c-1.6-5-3.6-10.3-6-15.6c2.4-5.3 4.5-10.5 6-15.5c13.8 4 22.1 10 22.1 15.6c0 4.7-5.8 9.7-15.7 13.4" />
+              </g>
+            </svg>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+              </svg>
+
+              <h3 class="mt-6 text-2xl font-bold text-white sm:mt-10">React</h3>
+              <p class="mt-6 text-base text-white">25 Topics 30 Lectures 40 Assignments 50 MCQ Quiz<br>
+                Pre-reqisite: No Pre-requisite
+                Validity: 5 Months<br>
+                Fees: 8000/-
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+
+    
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  </div>
+
+  </section>
+
+
+<!-- Countdown Timer Section -->
+<section class="countdown-timer py-10 bg-blue-700 text-center">
+  <h2 class="text-3xl text-white-500 font-bold mb-4">Registration Deadline Countdown</h2><br>
+  <h2 class="text-2xl text-white-500 font-bold mb-4">Time is running out. <br> Grab your seat now!!!</h2><br>
+  <div id="countdown" class="text-2xl font-bold"></div>
+</section>
+
+
+<!-- CTA Section -->
+<section class="cta-section py-8 bg-gray-900 text-center">
+  <h2 class="text-3xl text-white font-bold mb-4">Take the Next Step!</h2>
+  <p class="text-lg text-white mb-6">Special Java Placement Oriented batch only for 8999/- <br> Ready to join us? Don't miss out on this opportunity!</p>
+  <a href="#contact" class="bg-white text-gray-900 hover:bg-gray-800 hover:text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 ease-in-out">Register Now</a>
+</section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-8">
+    <div class="container mx-auto px-4">
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <p class="my-4">
+          If you have any questions or inquiries, feel free to contact us...
+        </p>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name" type="text" placeholder="Your Name" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Email
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="email" type="email" placeholder="Your Email" />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+            Message
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="message" rows="6" placeholder="Your Message"></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button" onclick="contactSubmit()">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  
+
+
+  <!--Footer container-->
+  <footer
+    class="flex flex-col items-center bg-neutral-900 text-center text-white bg-gray-900 text-white p-4 text-center">
+    <div class="container px-6 pt-6">
+      <div class="mb-6 flex justify-center">
+        <a href="#!" type="button" onclick="window.open('https://www.google.com')"
+          class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          data-te-ripple-init data-te-ripple-color="light">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+          </svg>
+        </a>
+
+
+
+        <a href="mailto:" type="button"
+          class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          data-te-ripple-init data-te-ripple-color="light">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+              fill-rule="evenodd" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="#!" type="button" onclick="window.open('http://www.google.com')"
+          class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          data-te-ripple-init data-te-ripple-color="light">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+          </svg>
+        </a>
+
+        <a href="#!" type="button" onclick="window.open('http://www.google.com')"
+          class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          data-te-ripple-init data-te-ripple-color="light">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+          </svg>
+        </a>
+
+        <a href="#!" type="button" onclick="window.open('http://www.google.com')"
+          class="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+          data-te-ripple-init data-te-ripple-color="light">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+      <p>&copy; CodeMaster Academy - Pune</p>
+    </div>
+
+
+
+
+  </footer>
+
+  <!-- Js script for section navigation through hero section scrolling-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all the navigation links
+      const navLinks = document.querySelectorAll("nav ul li a ");
+
+      // Add click event listeners to each navigation link
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          // Prevent the default behavior of the link
+          event.preventDefault();
+
+          // Get the target section's id from the link's href attribute
+          const targetId = link.getAttribute("href").substring(1);
+
+          // Get the target section element
+          const targetSection = document.getElementById(targetId);
+
+          // Scroll to the target section smoothly
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    });
+  </script>
+
+  <!--JS script for membership and learn more button scrolling-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the "Join Us" div
+      const joinUsDiv = document.querySelector('.join-us');
+      // Add click event listener to the "Join Us" div
+      joinUsDiv.addEventListener("click", function (event) {
+        event.preventDefault();
+        // Get the target section (Membership Section)
+        const membershipSection = document.getElementById("contact");
+        // Scroll to the Membership Section smoothly
+        membershipSection.scrollIntoView({ behavior: "smooth" });
+      });
+
+      // Get the "Learn More" div
+      const learnMoreDiv = document.querySelector('.learn-more');
+      // Add click event listener to the "Learn More" div
+      learnMoreDiv.addEventListener("click", function (event) {
+        event.preventDefault();
+        // Get the target section (About Us Section)
+        const aboutSection = document.getElementById("domains");
+        // Scroll to the About Us Section smoothly
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+
+  <!-- JS script for become-member and explore button scrolling-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the "Join Us" div
+      const joinUsDiv = document.querySelector('.become-member');
+      // Add click event listener to the "Join Us" div
+      joinUsDiv.addEventListener("click", function (event) {
+        event.preventDefault();
+        // Get the target section (Membership Section)
+        const membershipSection = document.getElementById("contact");
+        // Scroll to the Membership Section smoothly
+        membershipSection.scrollIntoView({ behavior: "smooth" });
+      });
+
+      // Get the "Learn More" div
+      const learnMoreDiv = document.querySelector('.explore-domains');
+      // Add click event listener to the "Learn More" div
+      learnMoreDiv.addEventListener("click", function (event) {
+        event.preventDefault();
+        // Get the target section (About Us Section)
+        const aboutSection = document.getElementById("domains");
+        // Scroll to the About Us Section smoothly
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+
+
+        
+      });
+    });
+  </script>
+
+
+  <!-- JS script for arrow scrolling to hero section-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollToTopBtn = document.getElementById("scrollToTop");
+      const secondSection = document.getElementById("about");
+
+      // Show/hide the scroll-to-top button based on the user's scroll position
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > secondSection.offsetTop) {
+          scrollToTopBtn.classList.remove("hidden");
+        } else {
+          scrollToTopBtn.classList.add("hidden");
+        }
+      });
+
+      // Scroll to the top of the page smoothly when the button is clicked
+      scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
