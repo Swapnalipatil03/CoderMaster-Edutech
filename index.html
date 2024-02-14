@@ -135,11 +135,11 @@
             <div
               class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 xl:space-x-12">
               <a href="#contact"
-                class="bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                class=" register bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
                 Register
               </a>
               <a href="#domains"
-                class="bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
+                class="explore-courses bg-black text-white hover:bg-blue-400 hover:text-white py-2 px-6 rounded-full text-lg md:text-xl font-semibold transition duration-300 ease-in-out transform hover:scale-105">
                 Explore Courses
               </a>
             </div>
@@ -411,7 +411,7 @@
 <section class="countdown-timer py-10 bg-blue-700 text-center">
   <h2 class="text-3xl text-white-500 font-bold mb-4">Registration Deadline Countdown</h2><br>
   <h2 class="text-2xl text-white-500 font-bold mb-4">Time is running out. <br> Grab your seat now!!!</h2><br>
-  <div id="countdown" class="text-2xl font-bold"></div>
+  <div id="countdown" class="text-2xl text-yellow font-bold"></div>
 </section>
 
 
@@ -638,6 +638,20 @@
       });
     });
   </script>
+
+    <script>
+  // Smooth scrolling for Register button
+  document.querySelector('.register').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Smooth scrolling for Explore Courses button
+  document.querySelector('.explore-courses').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector('#domains').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
 
   <script>
     function contactSubmit() {
