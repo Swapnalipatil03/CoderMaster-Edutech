@@ -1,5 +1,5 @@
 // Set the deadline for registration (Example: February 28, 2024)
-const deadline = new Date('February 20, 2024 23:59:59').getTime();
+const deadline = new Date('March 1, 2024 23:59:59').getTime();
 
 // Update the countdown every second
 const countdownTimer = setInterval(function() {
